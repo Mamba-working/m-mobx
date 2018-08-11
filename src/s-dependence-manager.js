@@ -27,8 +27,8 @@ const dependenceManager ={
   },
   _addNowObserver = (id) => {
     this._store[id] = this._store[id] || {}
-    this._store[id] = this.nowTarget
-    this._store[id] = this._store.watchers || []
+    this._store[id].target = this.nowTarget
+    this._store[id].watchers = this._store.watchers || []
     this._store[id].watchers.push(this.nowObserver)
   },
   trigger = (id) => {
