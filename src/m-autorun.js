@@ -1,4 +1,4 @@
-import dependenceManager from './s-dependence-manager'
+import dependenceManager from './m-dependence-manager'
 
 const autorun = (handler) => {
   dependenceManager.collectStart(handler)

@@ -1,5 +1,5 @@
 
-import dependenceManager from './s-dependence-manager'
+import dependenceManager from './m-dependence-manager'
 let cpIDCounter = 1
 class Computed {
   value = null
